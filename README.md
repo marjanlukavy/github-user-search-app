@@ -1,27 +1,29 @@
-# React + TypeScript + Vite
+# GitHub User Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app that allows users to search for a GitHub user and view basic information about them.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The GitHub User Search App is built using React and interacts with the GitHub API to retrieve user data. 
+Users can search for a specific GitHub username, and the app will display the user's avatar, username, bio, and a link to their GitHub profile.
 
-## Expanding the ESLint configuration
+## How to Run
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To run the app on your local machine:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone this repository: `git clone https://github.com/marjanlukavy/github-user-search-app.git`
+2. Navigate to the project directory: `cd github-user-search-app`
+3. Install dependencies: `npm install`
+4. Start the app: `npm run start`
+5. Access the app in your web browser
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Technologies Used
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- React
+- Zustand
+- Vite
+- GitHub REST API
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
